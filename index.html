@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" tabindex="0">MyPortofolio</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container" tabindex="0">
+    <section id="about" class="about-me" aria-label="About me section">
+        <h1>👋 Hallo bro, saya <strong>Deva Fauzan Nuraqli</strong></h1>
+        <p>
+            Selamat datang di situs web portofolio pribadi saya! saya adalah seorang <strong>siswa di SMK Plus Pelita Nusantara</strong>
+            yang senang membuat aplikasi web menggunakan <strong>HTML, CSS, Javascript</strong>.
+        </p>
+        <p>Saya percaya bahwa teknologi adalah alat penting untuk membangun masa depan pendidikan yang lebih baik.</p>
+    </section>
+    <section id="skill" aria-label="Skill section">
+        <h2>💡 Skill</h2>
+        <div class="skill-list" role="list">
+            <span class="skill" role="listitem">🔥 HTML</span>
+            <span class="skill" role="listitem">🎨 CSS3</span>
+            <span class="skill" role="listitem">⚙️ Javascript</span>
+            <span class="skill" role="listitem">📱 Responsive Design</span>
+            <span class="skill" role="listitem">🔨 Git & Github</span>
+            <span class="skill" role="listitem">📦 Bootstrap</span>
+        </div>
+    </section>
+    <section id="project" aria-label="Project section">
+        <h2>🚀 Project</h2>
+        <div class="project-list">
+            <article class="project-item" tabindex="0">
+                <h3>🎯 Portofolio Website</h3>
+                <p>Website pribadi yang menampilakan profil, keterampilan, dan proyek. Dibangun menggunakan HTML, CSS, dan Javascript</p>
+                <a href="#" class="porject-link" target="_blank" rel="noopener">🔗 Link Project</a>
+            </article>
+            <article class="project-item" tabindex="0">
+                <h3>📃 To-Do-List App</h3>
+                <p>aplikasi daftar tugas interaktif untuk menambah, menghapus, dan menandai tugas sebagai selesai.</p>
+                <a href="#" class="porject-link" target="_blank" rel="noopener">🔗 Link Project</a>
+            </article>
+            <article class="project-item" tabindex="0">
+                <h3>❓ Quiziz game</h3>
+                <p>Game kuis sederhana dengan pertanyaan pilihan ganda dan sistem penilaian. Dibuta dengan Javascript.</p>
+                <a href="#" class="porject-link" target="_blank" rel="noopener">🔗 Link Project</a>
+            </article>
+            
+        </div>
+    </section>
+    <section id="contact" aria-label="Contact section">
+        <h2>📪 Contact Me</h2>
+        <form  id="contact-form" novalidate>
+            <label for="name">Nama lengkap</label>
+            <input type="text" id="name" placeholder="Nama anda" aria-label="Nama anda">
+            <div class="error" id="name-error"></div>
+
+            <label for="name">Email</label>
+            <input type="email" id="email" placeholder="Email anda" aria-label="Email anda">
+            <div class="error" id="email-error"></div>
+
+            <label for="name">Pesan</label>
+            <textarea name="pesan" id="pesan" rows="4" placeholder="Tulis pesan anda..." aria-label="Pesan anda" required></textarea>
+            <div class="error" id="pesan-error"></div>
+
+            <button type="submit" aria-label="Kirim pesan">✉️ Kirim pesan</button>
+            <p class="success-msg" id="success-msg" aria-live="polite"></p>
+        </form>
+    </section>
+    </main>
+    <footer>
+        &copy; 2025 Deva Fauzan Nuraqli SMK Penus
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
