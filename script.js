@@ -2,15 +2,16 @@ const form = document.getElementById('contact-form');
 const nameInput = form.name;
 const emailInput = form.email;
 const messageInput = form.message;
-const successMsg = document.getElementById('success-message');
+const successMsg = document.getElementById('success-msg');
 
 const nameError = document.getElementById('name-error');
 const emailError = document.getElementById('email-error');
-const messageError = document.getElementById('message-error')
+const messageError = document.getElementById('pesan-error');
 
 function validateEmail(email){
-    return /^[^\s@]+[^\s@]+\.[^\s@]+$/.test(email);
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -20,7 +21,7 @@ form.addEventListener('submit', function(e){
     successMsg.textContent = '';
 
     let valid = true;
-    if (nameInput.value.trim() === ''){
+    if (nameInput.value.trim() === ""){
         nameError.textContent = 'Please enter your name';
         valid = false;
     }
@@ -28,14 +29,35 @@ form.addEventListener('submit', function(e){
         emailError.textContent = 'Please enter the valid email address';
         valid = false;
     }
-    if(messageInput.value.trim() === ''){
+    if(messageInput.value.trim() === ""){
        messageError.textContent = 'Please enter your message';
         valid = false;
     }
     if(valid){
-        successMsg.textContent = 'Thank you! your message has been sent'
+        successMsg.textContent = 'Thank you! your message has been sent';
         form.reset();
     }
 });
 
+const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
+      }
+    });
+  });
 
