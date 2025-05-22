@@ -1,0 +1,175 @@
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 900px;
+    height: auto;
+    background-color: #fff;
+    margin: 50px auto;
+    position: relative;
+}
+
+.twitter {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -35px;
+}
+
+.header {
+    margin: 0px;
+}
+
+.header .judul {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.header .judul span {
+    color: rgb(74, 77, 246);
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+.header a {
+    margin: 25px;  
+    margin-bottom: 30px; 
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.header a:hover {
+    color: rgb(78, 89, 243);
+    background-color: #a6a5a5;
+    border-radius: 7px;
+    transition: background-color 0.5s;
+}
+
+.hero {
+    background-image: url(benzema.jpg);
+    background-size: cover;
+    background-position: 0 -220px;
+    height: 400px;
+    border-bottom: 5px solid rgb(252, 252, 87);
+    border-top: 5px solid rgb(70, 61, 237);
+}
+
+
+
+.main{
+    margin: 20px;
+    width: 500px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main a {
+    color: blue;
+}
+
+.main h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main .penulis {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+   text-decoration: underline;
+   font-style: italic;
+   margin-left: 30px;
+}
+
+.main .penulis a {
+    color: #333;
+    font-size: 15px;
+}
+
+.main .penulis a:hover {
+    color: rgb(11, 7, 248);
+}
+
+.isi-artikel {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom:50px;
+    padding: 20px;
+}
+
+#sidebar {
+    width: 350px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+#sidebar img {
+    width: 200px;
+    height: 200px;
+}
+
+#sidebar h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#sidebar p {
+    text-align: justify;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+.lainnya a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+.lainnya a:hover {
+    color: rgb(78, 89, 243);
+    background-color: #a6a5a5;
+    border-radius: 7px;
+    transition: background-color 0.5s;
+}
+
+.footer {
+    background-color: black;
+    padding: 10px; 
+     margin-right: 0;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 13px;
+    
+}
+
+.content-cf {
+    overflow: auto;
+  }
+
+.content-cf:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+
+
+
